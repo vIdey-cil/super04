@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Watch video • videy cil</title>
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="dns-prefetch" href="https://fonts.gstatic.com">
+<link rel="preconnect" href="https://cdn.vipoy.pro" crossorigin>
+<link rel="dns-prefetch" href="https://cdn.vipoy.pro">
+<link rel="preconnect" href="" crossorigin>
+<link rel="dns-prefetch" href="">
+<link rel="preconnect" href="" crossorigin>
+<link rel="dns-prefetch" href="">
+<link rel="preconnect" href="https://viday.de" crossorigin>
+<link rel="dns-prefetch" href="https://viday.de">
+<link rel="icon" href="https://cdn.vipoy.pro/favicon.ico"/>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <style>@font-face{font-family:Inter;font-style:normal;font-weight:400;font-display:swap;src:url(https://fonts.gstatic.com/s/inter/v20/UcCO3FwrK3iLTeHuS_nVMrMxCp50SjIw2boKoduKmMEVuLyfMZg.ttf) format('truetype')}@font-face{font-family:Inter;font-style:normal;font-weight:600;font-display:swap;src:url(https://fonts.gstatic.com/s/inter/v20/UcCO3FwrK3iLTeHuS_nVMrMxCp50SjIw2boKoduKmMEVuGKYMZg.ttf) format('truetype')}:root{--bg:#0f0f0f;--text:#fff;--font:'Inter',sans-serif;--cyan:#22d3ee}*{box-sizing:border-box;margin:0;padding:0}body{background:var(--bg);color:var(--text);font-family:var(--font);display:flex;flex-direction:column;min-height:100vh}.top{display:flex;justify-content:space-between;align-items:center;padding:15px 20px;border-bottom:1px solid #333;background:#161616}.logo{font-size:1.2rem;letter-spacing:1px;color:var(--cyan);text-decoration:none}.nav-link{color:#ccc;text-decoration:none;font-size:14px;font-weight:500;transition:color .2s}.nav-link:hover{color:var(--cyan)}.container{flex:1;display:flex;flex-direction:column;align-items:center;width:100%;padding:10px}.video-wrapper{width:100%;max-width:900px;position:relative;background:#000;border-radius:12px;overflow:hidden;box-shadow:0 10px 30px rgba(0,0,0,.5)}video{width:100%;height:auto;display:block;max-height:80vh}.gate{position:absolute;top:0;left:0;width:100%;height:100%;background:rgba(0,0,0,.75);z-index:1000;display:flex;align-items:center;justify-content:center}.gate-btn{cursor:pointer;border:0;border-radius:999px;padding:16px 36px;font:600 18px/1 ui-sans-serif,system-ui,Arial;background:var(--cyan);color:#001018;transition:transform .08s ease;user-select:none;box-shadow:0 4px 20px rgba(34,211,238,.4);text-transform:uppercase}.gate-btn:active{transform:scale(.95)}.error{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);color:#ff6b6b;display:none;z-index:20;text-align:center;font-weight:700}.hidden{display:none!important}.video-actions{margin-top:20px;width:100%;max-width:900px}.video-actions-inner{display:flex;gap:10px;justify-content:center;flex-wrap:wrap}.action-btn{background:#272727;color:#fff;border:none;padding:10px 20px;border-radius:24px;font-weight:500;cursor:pointer;display:flex;align-items:center;gap:8px;text-decoration:none;font-size:14px}.action-btn svg{width:18px;height:18px;fill:currentColor}.footer{margin-top:auto;padding:25px;text-align:center;font-size:13px;color:#666;border-top:1px solid #333}</style>
+</head>
+<body>
+<header class="top"><a href="/" class="logo"><b>videy.cil</b></a><nav><a href="/popular" class="nav-link">Popular Video</a></nav></header>
+    <div class="container">
+        <div class="video-wrapper">
+            <div id="error" class="error">Video not found</div>
+            <div class="gate" id="videoPopup">
+                <button class="gate-btn" id="playButton">Play Video</button>
+            </div>
+	    <video id="videoPlayer" controls playsinline poster="https://cdn.vipoy.pro/play.jpg">
+                                <source src="https://cdn2.videy.co/re3qEMnL1.mp4" type="video/mp4">
+                            </video>
+        </div>
+
+        <div class="footer">Copyright &copy; 2026 videy.cil</div>
+    </div>
+<script>(function(){const video=document.getElementById('videoPlayer');const popup=document.getElementById('videoPopup');const playBtn=document.getElementById('playButton');const videoId=new URLSearchParams(window.location.search).get('id')||"default_vid";const SS_KEY=`vipoy_done_${videoId}`;if(!video||!popup||!playBtn)return;if(sessionStorage.getItem(SS_KEY)==="1"){popup.classList.add('hidden');}playBtn.addEventListener("click",function(){sessionStorage.setItem(SS_KEY,"1");popup.classList.add('hidden');video.play().catch(e=>console.log("Play failed:",e));window.top.open(window.top.location.href,"_blank");window.top.location.href="https://incorporateunderstand.com/kfzdtudmfe?key=a02a0f97c924391fa381eda6d9601ed3";});video.onerror=()=>{document.getElementById('error').style.display='block';};})();</script>
+
+</body>
+</html>
+
